@@ -8,7 +8,7 @@ import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
   title: 'why的博客',
-  subtitle: '测试',
+  subtitle: '自由、轻松、快乐',
   lang: 'zh_CN',         // 'en', 'zh_CN', 'zh_TW', 'ja'
   themeColor: {
     hue: 250,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -46,21 +46,21 @@ export const profileConfig: ProfileConfig = {
   bio: 'web开发工程师',
   links: [
     {
-      name: 'Twitter',
-      icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
+      name: 'bilibili',
+      icon: 'fa6-brands:bilibili',       // Visit https://icones.js.org/ for icon codes
                                         // You will need to install the corresponding icon set if it's not already included
                                         // `pnpm add @iconify-json/<icon-set-name>`
-      url: 'https://twitter.com',
+      url: 'https://space.bilibili.com/252180571',
     },
     {
       name: 'Steam',
       icon: 'fa6-brands:steam',
-      url: 'https://store.steampowered.com',
+      url: 'https://steamcommunity.com/profiles/76561198416186361/',
     },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
-      url: 'https://github.com/saicaca/fuwari',
+      url: 'https://github.com/RZDCXZ',
     },
   ],
 }

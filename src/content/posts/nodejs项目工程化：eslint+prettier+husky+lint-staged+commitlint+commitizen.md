@@ -1,5 +1,6 @@
 ---
 title: 'nodejs项目工程化：eslint+prettier+husky+lint-staged+commitlint+commitizen'
+description: '使用eslint和prettier检查并格式化代码，使用husky规范git提交格式'
 published: 2024-05-22
 tags: ['eslint', 'prettier']
 category: 技术
@@ -241,3 +242,5 @@ draft: false
 ## 总结
 
 至此，配置完成，若项目使用了vue或react框架则自行在eslint配置中加入相应规则即可。
+
+*参考资源：[bilibili](https://www.bilibili.com/video/BV1a8411i77L)*
