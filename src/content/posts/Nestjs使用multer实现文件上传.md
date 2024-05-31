@@ -239,7 +239,7 @@ draft: false
 
 ## 自定义函数限制上传的文件大小
 
-1. 使用命令生成一个pip，`nest g pipe file-size-validation-pipe --no-spec --flat`。
+1. 使用命令生成一个pipe，`nest g pipe file-size-validation-pipe --no-spec --flat`。
 
 2. 在生成的文件中写入如下代码：
 
