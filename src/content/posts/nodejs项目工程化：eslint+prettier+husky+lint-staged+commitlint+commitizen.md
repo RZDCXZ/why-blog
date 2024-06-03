@@ -302,4 +302,6 @@ draft: false
 
 至此，配置完成，若项目使用了vue或react框架则自行在eslint配置中加入相应规则即可。
 
+**2024-06-03 添加，今天发现antfu大佬的一个库`@antfu/eslint-config`，集成了所有的配置项，使用更简单，直接用这个库就行了。**
+
 *参考资源：[bilibili](https://www.bilibili.com/video/BV1a8411i77L)*
