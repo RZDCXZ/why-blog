@@ -4,7 +4,7 @@ COPY package.json .
 RUN npm install -g pnpm
 RUN pnpm install
 COPY . .
-RUN pnpm build
+RUN pnpm run build
 FROM nginx:latest as production-stage
 COPY --from=build-stage /app/dist /app
 COPY nginx.conf /etc/nginx/conf.d/default.conf

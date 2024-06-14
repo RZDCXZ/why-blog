@@ -6,8 +6,7 @@ on:
       - main
     # 修改文件范围, 不在范围内不触发
     paths:
-      - '.github/workflows/**'
-      - 'src/**'
+      - '**'
 # 任务
 jobs:
   test:
