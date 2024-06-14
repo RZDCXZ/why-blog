@@ -18,7 +18,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 20
+          node-version: 18
       - name: 打包镜像, 上传 Docker Hub
         run: |
           docker login -u ${{ secrets.REGISTRY_USERNAME }} -p ${{ secrets.REGISTRY_PASSWORD }}
@@ -34,4 +34,3 @@ jobs:
           # 执行脚本
           script: |
             ./deploy.sh
-
