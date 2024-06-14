@@ -33,5 +33,5 @@ jobs:
           password: ${{ secrets.REMOTE_PASSWORD }}
           # 执行脚本
           script: |
-            /home/ubuntu/deploy.sh
+            sh /home/ubuntu/deploy.sh
 
