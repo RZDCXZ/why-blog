@@ -1,7 +1,7 @@
 ---
 title: Nginx常用用法
 published: 2024-06-10
-tags: ['nest', 'nginx']
+tags: ['nginx']
 description: Nginx静态资源托管、反向代理、灰度系统
 category: '技术'
 draft: false 

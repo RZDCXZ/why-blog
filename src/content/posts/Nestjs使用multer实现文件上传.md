@@ -2,7 +2,7 @@
 title: Nestjs使用multer实现文件上传
 published: 2024-05-30
 description: '使用nestjs的各种接收上传文件的方法'
-tags: ['nest', 'typescript']
+tags: ['nest']
 category: '技术'
 draft: false 
 ---

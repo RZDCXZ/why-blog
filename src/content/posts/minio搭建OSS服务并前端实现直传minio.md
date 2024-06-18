@@ -2,10 +2,11 @@
 title: minio搭建OSS服务并前端实现直传minio
 published: 2024-06-06
 description: '自己搭建OSS服务实现文件上传'
-tags: ['nest', 'typescript', 'docker']
+tags: ['nest', 'docker']
 category: '技术'
 draft: false 
 ---
+
 ## 搭建服务
 
 1. docker中搜索minio镜像并运行容器
