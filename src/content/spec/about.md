@@ -2,10 +2,9 @@
 ## 技术栈
 - 前端：vue,react,uni-app,electron
 - 后端：nestjs,mysql,redis,docker,nginx
-- AI：langchain
 
 ## 简介
-爱好：编程(web开发)，游戏(主机游戏)，音乐(薛之谦)，人生苦短，追求自由，本站点主要用于记录开发过程中总结的经验，以及记录日常生活中的一些想法。
+爱好：编程，游戏，音乐，人生苦短，追求自由，本站点主要用于记录开发过程中总结的经验，以及记录日常生活中的一些想法。
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
