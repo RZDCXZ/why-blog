@@ -156,6 +156,42 @@ const request = <T = any>(config: AxiosRequestConfig): Promise<BaseResult<T>> =>
 export default request
 ```
 
+### 动态路由
+
+系统通过接口返回的用户权限动态加载页面路由，代码如下：
+
+```typescript
+// 动态注册路由
+export const addRoutes = (menus: Menus[]) => {
+    const findAndAddRouteByMenus = (arr: Menus[]) => {
+        arr.forEach((e) => {
+            const item = asyncRoutes.find((o) => o.path === e.frontpath)
+            if (item && !router.hasRoute(item.name as string)) { // 如果有该路由的权限且还没注册
+                router.addRoute('index', item) // 注册路由
+            }
+            if (e.child && e.child.length) { // 如果有子菜单
+                findAndAddRouteByMenus(e.child) // 递归
+            }
+        })
+    }
+
+    findAndAddRouteByMenus(menus)
+}
+```
+
+然而动态注册路由会遇到刷新页面报404的问题，解决思路是在App.vue挂载的时候重新执行一下addRoutes方法注册路由，然后手动导航到该地址：
+
+```vue
+// App.vue
+
+onMounted(() => {
+    addRoutes(menus.value) // 动态注册路由
+    router.replace(router.options.history.location) // 手动导航
+})
+```
+
+
+
 ### 环境变量
 
 系统使用了.env的方式区分不同环境下的配置，如在.env文件中配置了通用配置，在.env.development文件中配置了接口请求地址以及代理地址通过proxy的方式解决了浏览器跨域问题，在.env.production中配置了正式环境的设置，该项目和博客项目部署在同一服务器上，使用了nginx的location的方式在一个服务器上部署多个项目，并使用了nginx反向代理来解决了正式环境的跨域问题。
