@@ -10,4 +10,3 @@ FROM nginx:latest as production-stage
 COPY --from=build-stage /app/dist /app
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
-

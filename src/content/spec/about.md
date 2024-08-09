@@ -1,10 +1,10 @@
 # 关于我
 ## 技术栈
 - 前端：vue,react,uni-app,electron
-- 后端：nestjs,mysql,redis,docker,nginx
+- 后端：nestjs,mysql,redis,docker
 
 ## 简介
-爱好：编程，游戏，音乐，人生苦短，追求自由，本站点主要用于记录开发过程中总结的经验，以及记录日常生活中的一些想法。
+爱好：编程，游戏，音乐，人生苦短，追求自由，本站点主要用于记录开发过程中总结的经验，以及记录日常生活中的一些想法。交个朋友、技术合作可添加QQ: 1790279527，微信: xiaoyu_why9527，请注明来意。
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
