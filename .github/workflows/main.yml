@@ -1,0 +1,36 @@
+name: CI/CD
+# 触发条件为 push
+on:
+  push:
+    branches:
+      - main
+    # 修改文件范围, 不在范围内不触发
+    paths:
+      - '**'
+# 任务
+jobs:
+  test:
+    # 运行的环境
+    runs-on: ubuntu-latest
+    # 步骤
+    steps:
+      - uses: actions/checkout@v2 # git pull
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - name: 打包镜像, 上传 Docker Hub
+        run: |
+          docker login -u ${{ secrets.REGISTRY_USERNAME }} -p ${{ secrets.REGISTRY_PASSWORD }}
+          docker build -t rzdcxz/why-blog:latest  .
+          docker push ${{ secrets.DOCKER_REPOSITORY }}
+
+      - name: 登录服务器, 执行脚本
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ubuntu
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          # 执行脚本
+          script: |
+            sh /home/ubuntu/deploy.sh
