@@ -56,7 +56,7 @@ handleScroll(e:UniScrollEvent){
 
 ### 多页面缓存数据同步
 
-为了实现在一个页面点赞一个帖子，其他涉及到展示该帖子的页面也自动同步点赞，使用全局总线通知，uni.$emit方法会发起全局总线通知，当用户操作后可调用此方法，第一个参数传用户操作的key用来区分进行了什么操作，第二个参数为携带的数据，然后在想要同步的页面使用uni.$on方法监听uni.$emit的通知，从而实现同步操作。
+为了实现在一个页面点赞一个帖子，其他涉及到展示该帖子的页面也自动同步点赞，使用全局总线通知，`uni.$emit`方法会发起全局总线通知，当用户操作后可调用此方法，第一个参数传用户操作的key用来区分进行了什么操作，第二个参数为携带的数据，然后在想要同步的页面使用`uni.$on`方法监听`uni.$emit`的通知，从而实现同步操作。
 
 ### 绘制骨架屏
 
@@ -155,6 +155,6 @@ draw(ctx: DrawableContext , start: number) {
 
 ## 总结
 
-app已打包上传到服务器，访问该链接下载：`https://why-blog.cn/download/uniappx-community.apk`
+app已打包上传到服务器，访问该链接下载安装包：`https://why-blog.cn/download/uniappx-community.apk`
 
 请使用安卓手机安装体验。
